@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+/* start nav section */
+.navbar{
+    background-color: #1E202B;
+}
+.nav-link{
+    position: relative;
+    color: #fff;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.nav-link::before{
+content: "";
+width: 0%;
+height: 2px;
+position: absolute;
+background-color: #0DCAF0;
+bottom: 0;
+left: 7px;
+transition: all 0.5s;
+}
+.nav-link.active::before{
+    width: 80%;
+}
+.nav-link:hover::before{
+    width: 80%;
+}
+.nav-link:hover{
+    color: #0DCAF0;
+}
+.active1{
+    color: #0DCAF0;
+}
+@media( max-width:992px) {
+    .nav-link{
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+/* end nav section */
+/* start home section */
+.home{
+    padding-top: 150px;
+}
+.home button{
+    background-color: #0DCAF0;
+    border: none;
+    color: #fff;
+}
+.card{
+    background-color: #323544;
+}
+.footer-icons li{
+    padding: 12px;
+    color: #0DCAF0;
+    background-color: #262936;
+    border-radius: 50% ;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    transition: all 0.4s;
+}
+.footer-icons li:hover{
+    color: #fff;
+    background-color: #0DCAF0;
+}
+#iconSecondDay, #iconThirdDay{
+
+    margin: 0 auto;
+}
+/* end home section */

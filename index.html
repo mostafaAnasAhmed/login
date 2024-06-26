@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>Weather</title>
+</head>
+<body class="bg-dark">
+    <!-- start nav section -->
+
+    <nav class="navbar navbar-expand-lg fixed-top py-5 ">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-cloud-sun-rain text-info me-2 fs-2"></i>Weather</a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <i class="fa-solid fa-bars text-info"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active1 ms-3 py-1" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link ms-3 py-1 " href="#">News</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link ms-3 py-1 " href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link ms-3 py-1" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link ms-3 py-1 " href="#">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <!-- end nav section -->
+    <!-- start home section -->
+    <section id="home" class="home">
+        <div class="container"> 
+            <div class="home-input text-center">
+                <input type="text" placeholder="Find your location..." id="locationInput" name="location" class="form-control my-2">
+                <button class="py-1 px-5 rounded-4 mb-5" id="locationButton" >Find</button>
+            </div>
+            <div class="row gy-3">
+                <!-- first day -->
+                <div class="col-lg-4">
+                    <div class="card  p-4 rounded-4 text-light mb-md-0 mb-2 shadow">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-info" id="todayWeekDay"></span>
+                            <span class="text-info" id="todayDate"></span>
+                        </div>
+                        <div>
+                            <span id="city"></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="temp display-1 fw-bold d-block" id="todayTemp"></span>
+                            <img id="todayIcon" src="images/humidity.png" alt="">
+                        </div>
+                        <div>
+                            <span class="condition mt-2" id="todayCond"></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div>
+                                <i class="text-secondary fa-solid fa-umbrella"></i>
+                                <span id="expectRain"></span>
+                            </div>
+                            <div>
+                                <i class="text-secondary fa-solid fa-wind"></i>
+                                <span id="windSpeed"></span>
+                            </div>
+                            <div>
+                                <i class="text-secondary fa-solid fa-compass"></i>
+                                <span id="directionToday"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- second day -->
+                <div class="col-lg-4">
+                    <div class="card text-center p-4 rounded-4 text-light mb-md-0 mb-2 shadow">
+                        <span class="text-info" id="secondWeekDay"></span>
+                        <span class="temp  display-1 fw-bold d-block" id="maxTemp"></span>
+                        <span class="text-secondary fs-6 mb-3 display-1 fw-bold d-block" id="minTemp"></span>
+                            <img id="iconSecondDay" class="mb-2" src="images/dark-blue.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- second day -->
+                    <div class="col-lg-4">
+                        <div class="card text-center p-4 rounded-4 text-light mb-md-0 mb-2 shadow">
+                            <span class="text-info" id="thirdWeekDay"></span>
+                            <span class="temp display-1 fw-bold d-block" id="afterMaxTemp"></span>
+                            <span class="text-secondary fs-6 mb-3 display-1 fw-bold d-block" id="afterMinTemp"></span>
+                                <img id="iconThirdDay" class="mb-2" src="images/wind.png" alt="">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home section -->
+    <!-- start footer section -->
+    <footer id="footer" class="footer py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <input type="text" placeholder="Please Enter your email" id="emailInput" name="email" class="form-control">
+                <button class=" px-4 my-3 btn btn-info">Subscribe</button>
+            </div>
+                <div class="footer-icons">
+                    <ul class="d-flex justify-content-center align-items-center me-4">
+                        <li class="ms-4"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="ms-4"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="ms-4"><i class="fa-brands fa-google-plus-g"></i></li>
+                        <li class="ms-4"><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
+                </div>
+            </div>
+        <p class="text-white text-center">Copyright 2014 Route. Designed by Mostafa. All rights reserved</p>
+    </footer>
+    <!-- end footer section -->
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
